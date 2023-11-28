@@ -1,0 +1,358 @@
+/*
+Theme Name:     Planty
+Theme URI:      
+Description:    Twentytwenty child theme.
+Author:         Me
+Author URI:     
+Template:       twentytwenty
+Version:        0.1.0
+*/
+
+/****** Reset *************/
+body.template-full-width
+	.entry-content
+	> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(
+		.is-style-wide
+	) {
+	width: unset;
+}
+body.template-full-width
+	.entry-content
+	> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(
+		.is-style-wide
+	),
+body.template-full-width
+	[class*="__inner-container"]
+	> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(
+		.is-style-wide
+	) {
+	max-width: unset;
+}
+
+/****** General ***********/
+:root {
+	--main-color: #dc9f96;
+	--main-bg-color: #ece2da;
+	--title-color: #d2776a;
+	--alt-title-color: #3b8e46;
+	--button-nav-color: #dc9f96;
+	--button-hover: #c02e44;
+	--order-btn: #e0b9b4;
+}
+
+* {
+	font-family: "Syne", sans-serif !important;
+}
+
+body {
+	background: #fff;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 38px;
+	line-height: 45px;
+	letter-spacing: 0;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: 0;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: 0;
+}
+
+p {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.margin-bottom-7 {
+	margin-bottom: 7px !important;
+}
+
+.planty-btn {
+	box-sizing: border-box;
+	border: none;
+	padding: 10px 57px;
+	margin: 25px 0 !important;
+	display: inline-flex !important;
+	text-decoration: none;
+	color: #fff;
+	background-color: #E0B9B4;
+	border-radius: 7px;
+	margin-left: 10px;
+	width: auto;
+	min-width: 100px;
+	height: 55px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 37px;
+	letter-spacing: 0;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.planty-btn > * {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	box-sizing: border-box;
+	background: none !important;
+	border: none;
+	border-radius: 0 !important;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	letter-spacing: inherit;
+	line-height: inherit;
+	margin: 0;
+	opacity: 1;
+	padding: 0 !important;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none !important;
+	transition: none;
+	height: auto;
+}
+
+.planty-btn > *:hover,
+.planty-btn:hover {
+	background-color: #c02e44;
+	text-decoration: none !important;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0 !important;
+}
+
+.margin-bottom-27 {
+	margin-bottom: 27px !important;
+}
+
+.padding-bottom-0 {
+	padding-bottom: 0 !important;
+}
+
+.max-width-670 {
+	max-width: 670px;
+	margin: 0 auto;
+}
+
+.line-height-24 {
+	line-height: 24px !important;
+}
+
+/****** Header ***********/
+
+#site-header {
+	height: 80px;
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.header-inner {
+	height: 100%;
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 0 0 37px;
+	margin: 0 auto;
+}
+
+.header-titles-wrapper {
+	height: 100%;
+}
+
+.modal-menu > li > .ancestor-wrapper > a {
+	color: #000;
+	text-decoration: none !important;
+}
+
+.modal-menu > li > .ancestor-wrapper > a:active,
+.modal-menu > li > .ancestor-wrapper > a:hover {
+	text-decoration: none;
+}
+
+.modal-menu > li > .ancestor-wrapper > a:hover {
+	color: var(--button-hover);
+}
+
+/****** Primary Nav ***********/
+.header-navigation-wrapper,
+.primary-menu-wrapper {
+	height: 100%;
+}
+
+ul.primary-menu {
+	--bold: 700;
+	height: 100%;
+	margin: 0;
+}
+
+.primary-menu > li {
+	margin: 0;
+}
+
+.primary-menu li:last-of-type {
+	margin-left: 30px;
+	background-color: var(--button-nav-color);
+}
+
+.primary-menu li:last-of-type:hover {
+	background-color: var(--button-hover);
+}
+
+.primary-menu > li:last-of-type > a {
+	padding: 0 60px;
+	font-weight: var(--bold);
+	color: #fff !important;
+	font-size: 16px !important;
+}
+
+.primary-menu > li > a {
+	font-size: 16px;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 30px;
+	height: 100%;
+	color: #000 !important;
+	text-decoration: none !important;
+	transition-duration: 0ms;
+}
+
+.primary-menu > li > a:hover {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: var(--bold);
+}
+
+.primary-menu > li > a::after {
+	content: attr(data-text);
+	content: attr(data-text) / "";
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	font-size: 16px !important;
+	font-weight: var(--bold);
+}
+
+/****** Footer Nav ***********/
+#site-footer {
+	height: 60px;
+	padding: 0 !important;
+	margin: 0;
+}
+
+#site-footer nav {
+	height: 100%;
+}
+
+.footer-menu {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: normal;
+	margin: 0 !important;
+}
+
+.footer-menu li {
+	margin: 0;
+}
+
+.footer-menu a {
+	color: #000 !important;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.footer-menu a:hover {
+	text-decoration: none !important;
+}
+
+/* page */
+.post-inner {
+	padding-top: 0;
+}
+
+.entry-content h1 {
+	margin: 70px 0;
+}
+
+.entry-content h2,
+.entry-content h3 {
+	margin: 40px 0;
+}
+
+input[type="submit"] {
+	background: var(--order-btn);
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 37px;
+	letter-spacing: 0;
+	margin: 40px 0;
+	padding: 0 57px;
+	height: 55px;
+	opacity: 1;
+	text-decoration: none;
+	text-transform: unset;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--button-hover);
+	text-decoration: none;
+}
+
+/* Gutenberg editor */
+.wp-block {
+	max-width: 100%;
+}
+
+.wp-block[data-align="wide"] {
+	max-width: 100%;
+}
+
+.wp-block[data-align="full"] {
+	max-width: none;
+}
+
+.can-separator img {
+	height: 162px;
+	object-fit: cover;
+}
+
+.background-flower-position {
+	background-position: left calc(50% - 185px) bottom calc(50% - 145px) !important;
+}
